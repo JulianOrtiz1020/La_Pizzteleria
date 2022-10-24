@@ -271,7 +271,7 @@
      * ====================================================================== */      
 
     .wcs_popup_header{
-        padding: 20px;
+        padding: 30px;
         background: #26C281;
         border-top-right-radius: 8px;
         border-top-left-radius: 8px;
@@ -308,7 +308,7 @@
         overflow-y: scroll;*/
         background: #fff;
         padding: 20px;
-        border-bottom-right-radius: 8px;
+        border-bottom-right-radius: px;
         border-bottom-left-radius: 8px;
 
         -webkit-box-shadow: 0 4px 8px 1px rgba(43,43,43,.15);
@@ -445,7 +445,7 @@
     .wcs_popup_input input{
         border: 0;
         outline: none;
-        width: 90%;
+        width: 85%;
         color: #555555;
     }
 
