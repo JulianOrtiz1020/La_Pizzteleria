@@ -5,8 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizztelería</title>
-    <link rel="icon" href="img/boton_whatsapp.ico">
+    <link rel="icon" href="img/iconos/boton_whatsapp.ico"> <!--logo de Pizztelería en whatsapp -->
     <link rel="stylesheet" href="styles.css">
+    <!-- Style of the plugin -->
+    <link rel="stylesheet" href="plugin/components/Font Awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="plugin/whatsapp-chat-support.css">
     <style>
         .img-1 {
             border-radius: 25px 35px   35px 5px ;
@@ -16,14 +19,15 @@
     </style>
     </head>
 <body>
+    
     <header class="header">
         <div class="logo">
-            <img class="img-1" src="img/boton_whatsapp.png" alt="Logo de la marca">
+            <img class="img-1" src="img/iconos/boton_whatsapp.png" alt="Logo de la marca en el banner">
         </div>
         <nav>
            <ul class="nav-links">
                 <li><a href="index.html">Panadería</a></li>
-                <li><a href="reposteria.html">Repostería</a></li>
+                <li><a href="reposteria.html">Repostería y Pastelería</a></li>
                 <li><a href="nosotros.html">Nosotros</a></li>  
           </ul>            
         </nav>
@@ -35,16 +39,55 @@
            <a onclick="closeNav()" href="" class="close">&times;</a>
             <div class="overlay-content">
                 <a href="index.html">Panadería</a>
-                <a href="reposteria.html">Repostería</a>
+                <a href="reposteria.html">Repostería y Pastelería</a>
                 <a href="nosotros.html">Nosotros</a>
                     <a href="#">Contacto</a>
             </div>
         </div>
-
     </header>
-
-    <H1>Nosotros acá va texto con la historia de La Pizztelería</H1>
+    <H1 style="padding: 0px; text-align: center; font-size:28px;">
+        <img class="img-1" src="img/iconos/un-pan.png" alt="Logo de la marca"> Panadería Artesanal</H1>
    <script type="text/javascript" src="nav.js"></script>
-   
+ <!-- Button Whatsapp Structure -->
+ <div class="whatsapp_chat_support wcs_fixed_right" id="button-w">
+    <div class="wcs_button_label">
+            Contáctanos
+        </div>  
+    <div class="wcs_button wcs_button_circle">
+        <span class="fa fa-whatsapp"></span>
+    </div>  
+     <div class="wcs_popup">
+        <div class="wcs_popup_close">
+            <span class="fa fa-close"></span>
+        </div>
+        <div class="wcs_popup_header">
+            <span class="fa fa-whatsapp"></span>
+            <strong>Servicio al cliente</strong>
+            <div class="wcs_popup_header_description">¿Listo para hacer tu pedido?...</div>
+        </div>  
+        <div class="wcs_popup_input" 
+            data-number="573045772793"
+            data-availability='{ "monday":"08:00-20:00", "tuesday":"08:00-20:00", "wednesday":"08:00-20:00", "thursday":"08:00-20:00", "friday":"08:00-20:00", "saturday":"08:00-20:00", "sunday":"09:00-23:59" }'>
+            <input type="text" placeholder="Haz tu pedido!" />
+            <i class="fa fa-play"></i>
+        </div>
+        <div class="wcs_popup_avatar">
+            <img src="img/iconos/boton_whatsapp.png" alt="">
+        </div>
+    </div>
+</div>
+    <!-- jQuery 1.8+ -->
+<script src="plugin/components/jQuery/jquery-1.11.3.min.js"></script>
+    <!-- Plugin JS file -->
+<script src="plugin/components/moment/moment.min.js"></script>
+<script src="plugin/components/moment/moment-timezone-with-data.min.js"></script> <!-- spanish language (es) -->
+<script src="plugin/whatsapp-chat-support.js"></script>
+<script>
+   $('#button-w').whatsappChatSupport({
+        defaultMsg : '',
+    });
+</script>
+<div class="container">
+<p>Aca puede ir una imagen de La Pizztelería con texto de su historia.</p>
 </body>
 </html>
