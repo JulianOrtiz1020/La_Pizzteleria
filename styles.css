@@ -243,3 +243,34 @@ body {
     height: 220px;
     
 }*/
+
+/* Empieza el codigo de las redes del footer*/
+.wrapper ul {
+    list-style: none;
+}
+
+.wrapper ul li {
+    width: 75px;
+    height: 75px;
+    line-height: 75px;
+    margin: 0 10px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 5px solid #d8e2dc;
+    float: left;
+    transition: all 0.5s ease;
+}
+
+.wrapper ul li .fa {
+    color: #d8e2dc;
+    margin-top: 20px;
+    transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover.facebook {
+    border: 5px solid #3b5998;
+    box-shadow: 0 0 15px #3b5998;
+    transition: all 0.5s ease;
+
+}
